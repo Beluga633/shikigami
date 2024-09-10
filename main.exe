@@ -1,0 +1,6 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/anti_kick.lua"))()
+	return ...
+end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/scripts/bloxfruit.lua"))()
+     })
+end
