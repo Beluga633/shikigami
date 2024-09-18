@@ -1,6 +1,5 @@
 getgenv().Team = "Marines" -- Pirates/Marines
 getgenv().Fix_Lag = true -- true/false
-getgenv().Anti_kick = true -- true/false
 getgenv().Auto_Execute = false -- true/false
 getgenv().Clear_Settings = false -- true/false
 repeat wait() until game:IsLoaded()
