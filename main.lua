@@ -1,6 +1,7 @@
 getgenv().Team = "Marines" -- Pirates/Marines
 getgenv().Fix_Lag = true -- true/false
 getgenv().Auto_Execute = false -- true/false
+getgenv().Auto_Rejoin = true -- true/false
 getgenv().Clear_Settings = false -- true/false
 repeat wait() until game:IsLoaded()
 local PlaceId = game.PlaceId
