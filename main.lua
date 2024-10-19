@@ -1,14 +1,17 @@
-getgenv().Team = "Marines" -- Pirates/Marines
-getgenv().Fix_Lag = true -- true/false
-getgenv().Auto_Execute = false -- true/false
-getgenv().Auto_Rejoin = true -- true/false
-getgenv().Clear_Settings = false -- true/false
 repeat wait() until game:IsLoaded()
-local PlaceId = game.PlaceId
-if PlaceId == 2753915549 or PlaceId == 4442272183 or PlaceId == 7449423635 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/scripts/bloxfruit.lua"))()
-elseif PlaceId == 2753915549 or PlaceId == 4442272183 or PlaceId == 7449423635 then
- loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/anti_kick.lua"))()
-elseif PlaceId == 2753915549 or PlaceId == 4442272183 or PlaceId == 7449423635 then
- loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/auto-rejoin.lua"))()
+local Player = game.Players.LocalPlayer
+if Player.UserId == 3573965288
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/data/arisgado3.lua"))()
+elseif Player.UserId == 2577131658
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/data/arisgado7.lua"))()
+elseif Player.UserId == 2818201667
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/data/glignacio54321.lua"))()
+elseif Player.UserId == 2526634520
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/data/kierbermio.lua"))()
+elseif Player.UserId == 7137421404
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/data/kieryos05.lua"))()
+elseif Player.UserId == 3618241806
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/data/mucoyco123.lua"))()
+elseif Player.UserId == 5734902543
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/data/cemberkyle001.lua"))()   
 end
