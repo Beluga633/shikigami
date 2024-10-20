@@ -1,3 +1,15 @@
+local Whitelisted = {3573965288,2577131658,281820166,2526634520,7137421404,361824180,5734902543,3545179610} -- Use player ids as its more secure if a player was to change their username.
+
+game.Players.PlayerAdded:Connect(function(player)
+for i,v in pairs(Whitelisted) do
+    if player.UserId == v then -- they're whitelisted!
+        print("You are whitelisted enjoy!")
+    else -- their id wasnt found in the table
+        player:Kick("You are not whitelisted!")
+    end
+    end
+end)
+
 repeat wait() until game:IsLoaded()
 local Player = game.Players.LocalPlayer
 if Player.UserId == 3573965288 then
@@ -14,6 +26,6 @@ elseif Player.UserId == 3618241806 then
  loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/data/mucoyco123.lua"))()
 elseif Player.UserId == 5734902543 then
  loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/data/cemberkyle001.lua"))()
-elseif Player.UserId == 3545179610 then
+elseif Player.UserId ==  then
  loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/data/bobosigawa.lua"))()
 end
