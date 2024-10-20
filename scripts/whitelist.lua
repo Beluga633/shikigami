@@ -1,10 +1,7 @@
-getgenv().Team = "Marine" -- Pirates/Marines
-getgenv().Fix_Lag = true -- true/false
-getgenv().Auto_Execute = false -- true/false
-getgenv().Auto_Rejoin = true -- true/false
-getgenv().Clear_Settings = false -- true/false
-repeat wait() until game:IsLoaded()
-local PlaceId = game.PlaceId
-if PlaceId == 2753915549 or PlaceId == 4442272183 or PlaceId == 7449423635 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/scripts/bloxfruit.lua"))()
-end
+local whitelistUserIDs = {3573965288,2577131658,281820166,2526634520,7137421404,361824180,5734902543,3545179610} -- Use player ids as its more secure if a player was to change their username.
+
+game.Players.PlayedAdded:Connect(function(player)
+    if not table.find(whitelistUserIDs,player.UserId) then --If the UserID value is not in the table this returns nil. In Lua nil equals false.
+        player:Kick("You are not whitelisted!.")
+    end
+end)
