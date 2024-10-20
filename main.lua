@@ -1,12 +1,8 @@
-local Whitelisted = {3573965288,2577131658,281820166,2526634520,7137421404,361824180,5734902543,3545179610} -- Use player ids as its more secure if a player was to change their username.
+local whitelistUserIDs = {3573965288,2577131658,281820166,2526634520,7137421404,361824180,5734902543,3545179610} -- Use player ids as its more secure if a player was to change their username.
 
-game.Players.PlayerAdded:Connect(function(player)
-for i,v in pairs(Whitelisted) do
-    if player.UserId == v then -- they're whitelisted!
-        print("You are whitelisted enjoy!")
-    else -- their id wasnt found in the table
-        player:Kick("You are not whitelisted!")
-    end
+game.Players.PlayedAdded:Connect(function(player)
+    if not table.find(whitelistUserIDs,player.UserId) then --If the UserID value is not in the table this returns nil. In Lua nil equals false.
+        player:Kick("You are not whitelisted on this server.")
     end
 end)
 
@@ -26,6 +22,6 @@ elseif Player.UserId == 3618241806 then
  loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/data/mucoyco123.lua"))()
 elseif Player.UserId == 5734902543 then
  loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/data/cemberkyle001.lua"))()
-elseif Player.UserId ==  then
+elseif Player.UserId == 3545179610 then
  loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/data/bobosigawa.lua"))()
 end
