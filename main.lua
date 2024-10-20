@@ -13,5 +13,7 @@ elseif Player.UserId == 7137421404
 elseif Player.UserId == 3618241806
  loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/data/mucoyco123.lua"))()
 elseif Player.UserId == 5734902543
- loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/data/cemberkyle001.lua"))()   
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/data/cemberkyle001.lua"))()
+elseif Player.UserId == 3545179610
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/Beluga633/shikigami/main/data/bobosigawa.lua"))()
 end
